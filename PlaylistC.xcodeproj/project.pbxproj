@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7E26E9E020C59E7C006B2298 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26E9DF20C59E7C006B2298 /* AppDelegate.m */; };
-		7E26E9E320C59E7C006B2298 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26E9E220C59E7C006B2298 /* ViewController.m */; };
 		7E26E9E620C59E7C006B2298 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E26E9E420C59E7C006B2298 /* Main.storyboard */; };
 		7E26E9E820C59E7D006B2298 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E26E9E720C59E7D006B2298 /* Assets.xcassets */; };
 		7E26E9EB20C59E7D006B2298 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E26E9E920C59E7D006B2298 /* LaunchScreen.storyboard */; };
@@ -19,8 +18,6 @@
 		7E26E9DB20C59E7C006B2298 /* PlaylistC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaylistC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E26E9DE20C59E7C006B2298 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7E26E9DF20C59E7C006B2298 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7E26E9E120C59E7C006B2298 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7E26E9E220C59E7C006B2298 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7E26E9E520C59E7C006B2298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E26E9E720C59E7D006B2298 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E26E9EA20C59E7D006B2298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,15 +57,21 @@
 			children = (
 				7E26E9DE20C59E7C006B2298 /* AppDelegate.h */,
 				7E26E9DF20C59E7C006B2298 /* AppDelegate.m */,
-				7E26E9E120C59E7C006B2298 /* ViewController.h */,
-				7E26E9E220C59E7C006B2298 /* ViewController.m */,
 				7E26E9E420C59E7C006B2298 /* Main.storyboard */,
+				7E26E9F420C59EAD006B2298 /* Resources */,
+			);
+			path = PlaylistC;
+			sourceTree = "<group>";
+		};
+		7E26E9F420C59EAD006B2298 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				7E26E9E720C59E7D006B2298 /* Assets.xcassets */,
 				7E26E9E920C59E7D006B2298 /* LaunchScreen.storyboard */,
 				7E26E9EC20C59E7D006B2298 /* Info.plist */,
 				7E26E9ED20C59E7D006B2298 /* main.m */,
 			);
-			path = PlaylistC;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +100,7 @@
 		7E26E9D320C59E7C006B2298 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = AM;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Adam Moskovich";
 				TargetAttributes = {
@@ -141,7 +145,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E26E9E320C59E7C006B2298 /* ViewController.m in Sources */,
 				7E26E9EE20C59E7D006B2298 /* main.m in Sources */,
 				7E26E9E020C59E7C006B2298 /* AppDelegate.m in Sources */,
 			);
@@ -285,7 +288,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DBM67E5D74;
-				INFOPLIST_FILE = PlaylistC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PlaylistC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +305,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DBM67E5D74;
-				INFOPLIST_FILE = PlaylistC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PlaylistC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
