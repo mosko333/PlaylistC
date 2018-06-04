@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class AMPlaylist;
+
 @interface AMDetailViewController : UITableViewController
+
+@property (nonatomic, strong) AMPlaylist *playlist;
 
 @end

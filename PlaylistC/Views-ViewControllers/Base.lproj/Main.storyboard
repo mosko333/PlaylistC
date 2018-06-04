@@ -60,7 +60,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="aQs-Uo-CHX" kind="show" id="RC6-0U-Ki9"/>
+                                    <segue destination="aQs-Uo-CHX" kind="show" identifier="ToDetail.VC" id="RC6-0U-Ki9"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -120,7 +120,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="GRQ-lB-ijW" detailTextLabel="VH0-un-KJT" style="IBUITableViewCellStyleValue1" id="bMd-li-Och">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SongCell" textLabel="GRQ-lB-ijW" detailTextLabel="VH0-un-KJT" style="IBUITableViewCellStyleValue1" id="bMd-li-Och">
                                 <rect key="frame" x="0.0" y="111" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bMd-li-Och" id="7hQ-iz-nfU">
@@ -151,8 +151,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="(Playlist Name)" id="8kD-np-thB">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="qiv-nw-L0i"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="qiv-nw-L0i">
+                            <connections>
+                                <action selector="addSongBtnPressed:" destination="aQs-Uo-CHX" id="uEm-60-Abw"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="artistTextField" destination="n9G-0V-cGD" id="FkZ-8L-sAR"/>
+                        <outlet property="nameTextField" destination="btd-rE-K3y" id="JxO-Lk-TEb"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hiL-TH-lag" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
