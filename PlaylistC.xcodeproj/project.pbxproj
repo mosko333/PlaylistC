@@ -12,6 +12,10 @@
 		7E26E9E820C59E7D006B2298 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E26E9E720C59E7D006B2298 /* Assets.xcassets */; };
 		7E26E9EB20C59E7D006B2298 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E26E9E920C59E7D006B2298 /* LaunchScreen.storyboard */; };
 		7E26E9EE20C59E7D006B2298 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26E9ED20C59E7D006B2298 /* main.m */; };
+		7E26E9F720C5A186006B2298 /* AMMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26E9F620C5A186006B2298 /* AMMainTableViewController.m */; };
+		7E26E9FA20C5A1AC006B2298 /* AMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26E9F920C5A1AC006B2298 /* AMDetailViewController.m */; };
+		7E26E9FE20C5A6DA006B2298 /* AMSong.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26E9FD20C5A6DA006B2298 /* AMSong.m */; };
+		7E26EA0120C5A6EC006B2298 /* AMPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26EA0020C5A6EC006B2298 /* AMPlaylist.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,14 @@
 		7E26E9EA20C59E7D006B2298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E26E9EC20C59E7D006B2298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E26E9ED20C59E7D006B2298 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7E26E9F520C5A186006B2298 /* AMMainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMMainTableViewController.h; sourceTree = "<group>"; };
+		7E26E9F620C5A186006B2298 /* AMMainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMMainTableViewController.m; sourceTree = "<group>"; };
+		7E26E9F820C5A1AC006B2298 /* AMDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMDetailViewController.h; sourceTree = "<group>"; };
+		7E26E9F920C5A1AC006B2298 /* AMDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMDetailViewController.m; sourceTree = "<group>"; };
+		7E26E9FC20C5A6DA006B2298 /* AMSong.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMSong.h; sourceTree = "<group>"; };
+		7E26E9FD20C5A6DA006B2298 /* AMSong.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMSong.m; sourceTree = "<group>"; };
+		7E26E9FF20C5A6EC006B2298 /* AMPlaylist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMPlaylist.h; sourceTree = "<group>"; };
+		7E26EA0020C5A6EC006B2298 /* AMPlaylist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMPlaylist.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +69,8 @@
 			children = (
 				7E26E9DE20C59E7C006B2298 /* AppDelegate.h */,
 				7E26E9DF20C59E7C006B2298 /* AppDelegate.m */,
-				7E26E9E420C59E7C006B2298 /* Main.storyboard */,
+				7E26EA0220C5A6F2006B2298 /* Models */,
+				7E26E9FB20C5A648006B2298 /* Views-ViewControllers */,
 				7E26E9F420C59EAD006B2298 /* Resources */,
 			);
 			path = PlaylistC;
@@ -72,6 +85,29 @@
 				7E26E9ED20C59E7D006B2298 /* main.m */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		7E26E9FB20C5A648006B2298 /* Views-ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7E26E9F520C5A186006B2298 /* AMMainTableViewController.h */,
+				7E26E9F620C5A186006B2298 /* AMMainTableViewController.m */,
+				7E26E9F820C5A1AC006B2298 /* AMDetailViewController.h */,
+				7E26E9F920C5A1AC006B2298 /* AMDetailViewController.m */,
+				7E26E9E420C59E7C006B2298 /* Main.storyboard */,
+			);
+			path = "Views-ViewControllers";
+			sourceTree = "<group>";
+		};
+		7E26EA0220C5A6F2006B2298 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7E26E9FC20C5A6DA006B2298 /* AMSong.h */,
+				7E26E9FD20C5A6DA006B2298 /* AMSong.m */,
+				7E26E9FF20C5A6EC006B2298 /* AMPlaylist.h */,
+				7E26EA0020C5A6EC006B2298 /* AMPlaylist.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E26E9FE20C5A6DA006B2298 /* AMSong.m in Sources */,
 				7E26E9EE20C59E7D006B2298 /* main.m in Sources */,
 				7E26E9E020C59E7C006B2298 /* AppDelegate.m in Sources */,
+				7E26EA0120C5A6EC006B2298 /* AMPlaylist.m in Sources */,
+				7E26E9F720C5A186006B2298 /* AMMainTableViewController.m in Sources */,
+				7E26E9FA20C5A1AC006B2298 /* AMDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
