@@ -16,6 +16,7 @@
 		7E26E9FA20C5A1AC006B2298 /* AMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26E9F920C5A1AC006B2298 /* AMDetailViewController.m */; };
 		7E26E9FE20C5A6DA006B2298 /* AMSong.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26E9FD20C5A6DA006B2298 /* AMSong.m */; };
 		7E26EA0120C5A6EC006B2298 /* AMPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26EA0020C5A6EC006B2298 /* AMPlaylist.m */; };
+		7E26EA0620C5B527006B2298 /* AMPlaylistController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26EA0520C5B527006B2298 /* AMPlaylistController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		7E26E9FD20C5A6DA006B2298 /* AMSong.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMSong.m; sourceTree = "<group>"; };
 		7E26E9FF20C5A6EC006B2298 /* AMPlaylist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMPlaylist.h; sourceTree = "<group>"; };
 		7E26EA0020C5A6EC006B2298 /* AMPlaylist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMPlaylist.m; sourceTree = "<group>"; };
+		7E26EA0420C5B527006B2298 /* AMPlaylistController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMPlaylistController.h; sourceTree = "<group>"; };
+		7E26EA0520C5B527006B2298 /* AMPlaylistController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMPlaylistController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,7 @@
 			children = (
 				7E26E9DE20C59E7C006B2298 /* AppDelegate.h */,
 				7E26E9DF20C59E7C006B2298 /* AppDelegate.m */,
+				7E26EA0720C5B532006B2298 /* ModelControllor */,
 				7E26EA0220C5A6F2006B2298 /* Models */,
 				7E26E9FB20C5A648006B2298 /* Views-ViewControllers */,
 				7E26E9F420C59EAD006B2298 /* Resources */,
@@ -108,6 +112,15 @@
 				7E26EA0020C5A6EC006B2298 /* AMPlaylist.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		7E26EA0720C5B532006B2298 /* ModelControllor */ = {
+			isa = PBXGroup;
+			children = (
+				7E26EA0420C5B527006B2298 /* AMPlaylistController.h */,
+				7E26EA0520C5B527006B2298 /* AMPlaylistController.m */,
+			);
+			path = ModelControllor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E26E9FE20C5A6DA006B2298 /* AMSong.m in Sources */,
+				7E26EA0620C5B527006B2298 /* AMPlaylistController.m in Sources */,
 				7E26E9EE20C59E7D006B2298 /* main.m in Sources */,
 				7E26E9E020C59E7C006B2298 /* AppDelegate.m in Sources */,
 				7E26EA0120C5A6EC006B2298 /* AMPlaylist.m in Sources */,
